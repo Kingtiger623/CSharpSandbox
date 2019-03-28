@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfTest1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Name="MainGrid">
+    <!--<Grid Name="MainGrid">
         <Grid.Background>
             <LinearGradientBrush>
                 <LinearGradientBrush.GradientStops>
@@ -27,5 +27,12 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         
-    </Grid>
+    </Grid>-->
+    <WrapPanel Margin="3">
+        <Button VerticalAlignment="Top" Margin="3">Top Button</Button>
+        <Button MinHeight="60" Margin="3">Tall Button 2</Button>
+        <Button VerticalAlignment="Bottom" Margin="3">Bottom Button</Button>
+        <Button Margin="3">Stretch Button</Button>
+        <Button VerticalAlignment="Center" Margin="3">Centered Button</Button>
+    </WrapPanel>
 </Window>
