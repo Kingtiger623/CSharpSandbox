@@ -28,11 +28,37 @@
         </Grid.ColumnDefinitions>
         
     </Grid>-->
-    <WrapPanel Margin="3">
+    <!--<WrapPanel Margin="3">
         <Button VerticalAlignment="Top" Margin="3">Top Button</Button>
         <Button MinHeight="60" Margin="3">Tall Button 2</Button>
         <Button VerticalAlignment="Bottom" Margin="3">Bottom Button</Button>
         <Button Margin="3">Stretch Button</Button>
         <Button VerticalAlignment="Center" Margin="3">Centered Button</Button>
-    </WrapPanel>
+    </WrapPanel>-->
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--<WrapPanel Margin="3" Grid.Row="0">-->
+        <StackPanel Orientation="Vertical">
+            <ScrollViewer VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
+                    <Button Height="30" Padding="3" Margin="3">Top Button</Button>
+                    <Button Height="30" Margin="3">Tall Button 2</Button>
+                    <Button Height="30" Margin="3">Bottom Button</Button>
+                    <Button  Height="30" Margin="3">Stretch Button</Button>
+                    <Button  Height="30" Margin="3">Centered Button</Button>
+                </StackPanel>
+            </ScrollViewer>
+        </StackPanel>
+        <!--</WrapPanel>-->
+    </Grid>
 </Window>
