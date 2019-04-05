@@ -47,9 +47,9 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <!--<WrapPanel Margin="3" Grid.Row="0">-->
-        <StackPanel Orientation="Vertical">
-            <ScrollViewer VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto" Grid.ColumnSpan="2">
+        <Border Grid.Row="1" Grid.Column="1" BorderThickness="1" BorderBrush="Red" CornerRadius="10" Background="Beige"></Border>
+        <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+            <ScrollViewer VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
                     <Button Height="30" Padding="3" Margin="3">Top Button</Button>
                     <Button Height="30" Margin="3">Tall Button 2</Button>
@@ -59,6 +59,12 @@
                 </StackPanel>
             </ScrollViewer>
         </StackPanel>
-        <!--</WrapPanel>-->
+        <WrapPanel Margin="3" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center">
+            <Button VerticalAlignment="Top" Margin="3">Top Button</Button>
+            <Button MinHeight="60" Margin="3">Tall Button 2</Button>
+            <Button VerticalAlignment="Bottom" Margin="3">Bottom Button</Button>
+            <Button Margin="3">Stretch Button</Button>
+            <Button VerticalAlignment="Center" Margin="3">Centered Button</Button>
+        </WrapPanel>
     </Grid>
 </Window>
