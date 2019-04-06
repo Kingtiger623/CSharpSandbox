@@ -16,23 +16,26 @@
             <MenuItem Header="MenuItem4" Margin="5" />
         </Menu>
         <ToolBar Height="35" DockPanel.Dock="Top" Visibility="Collapsed" >
-            
+
         </ToolBar>
 
-        <StatusBar DockPanel.Dock="Bottom" Background="AliceBlue" Height="30">
+        <StatusBar DockPanel.Dock="Bottom" Height="30">
+            <StatusBar.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuBarColor}}"/>
+            </StatusBar.Background>
             <StatusBarItem Content="StatusBarItem"/>
 
         </StatusBar>
         <StackPanel>
-         <TabControl VerticalAlignment="Top">
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-        </TabControl>
-           
+            <TabControl VerticalAlignment="Top">
+                <TabItem Header="TabItem">
+                    <Grid Background="#FFE5E5E5"/>
+                </TabItem>
+                <TabItem Header="TabItem">
+                    <Grid Background="#FFE5E5E5"/>
+                </TabItem>
+            </TabControl>
+
         </StackPanel>
     </DockPanel>
 </Window>
