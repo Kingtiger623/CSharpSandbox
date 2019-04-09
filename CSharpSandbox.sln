@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPanels", "WpfPanels\WpfP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTest2", "WpfTest2\WpfTest2.csproj", "{45B6FA8E-CA7B-4D27-BA77-278569AD50BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingTest1", "ThreadingTest1\ThreadingTest1.csproj", "{43A129DA-90D8-464F-9C5A-F458EB4B2DB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{45B6FA8E-CA7B-4D27-BA77-278569AD50BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45B6FA8E-CA7B-4D27-BA77-278569AD50BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45B6FA8E-CA7B-4D27-BA77-278569AD50BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43A129DA-90D8-464F-9C5A-F458EB4B2DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43A129DA-90D8-464F-9C5A-F458EB4B2DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43A129DA-90D8-464F-9C5A-F458EB4B2DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43A129DA-90D8-464F-9C5A-F458EB4B2DB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
